@@ -69,9 +69,22 @@
 ## 关键结果与结论
 
 - 通过 `data_analysis.ipynb` 的可视化，K=3 是比较合适的选择（IMF 的中心频率分布较为均匀）。
+<p>
+  <img src="T5_1.png" alt="T5" width="32%" style="margin-right:1%">
+  <img src="T2_1.png" alt="T2" width="32%" style="margin-right:1%">
+  <img src="norm1.png" alt="norm" width="32%">
+</p>
+
+<p>
+  <img src="T5_2.png" alt="T5" width="32%" style="margin-right:1%">
+  <img src="T2_2.png" alt="T2" width="32%" style="margin-right:1%">
+  <img src="norm2.png" alt="norm" width="32%">
+</p>
 - `分类.ipynb` 的实验显示：
   - 使用自编码器提取的瓶颈编码再做直方频次并计算 KL，可以较好地区分不同类别（不同 Tx）。
-  - 基于 SVD 的奇异值（取 `sigma` 后计算 KL）也能区分类别，两类方法在散度图中有良好的分离度（Notebook 最终绘制的散点图显示不同类聚集良好）。
+  - 基于 SVD 的奇异值（取 `sigma` 后计算 KL）也能区分类别，两类方法在散度图中有良好的分离度.
+  
+![Binary demo](clutter.png)
 
 这些结果提示：
 
